@@ -1,6 +1,7 @@
 import 'package:bloc_lab/examples/01_counter_cubit/counter_page.dart';
 import 'package:bloc_lab/examples/02_color_cubit/color_page.dart';
 import 'package:bloc_lab/examples/03_user_cubit/user_page.dart';
+import 'package:bloc_lab/examples/04_todo_cubit/todo_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -34,6 +35,14 @@ class HomePage extends StatelessWidget {
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (_) => const UserPage()),
+            ),
+          ),
+          ListTile(
+            title: Text("04.- Todo List Cubit"),
+            trailing: const Icon(Icons.arrow_forward_ios_rounded),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const TodoPage()),
             ),
           ),
         ],
