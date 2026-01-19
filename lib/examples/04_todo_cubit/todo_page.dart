@@ -32,7 +32,7 @@ class TodoView extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          context.read<TodoCubit>().addTask("Nueva tarea");
+          context.read<TodoCubit>().addTask("New task");
         },
         child: Icon(Icons.add),
       ),
