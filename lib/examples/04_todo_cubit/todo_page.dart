@@ -7,7 +7,7 @@ class TodoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(create: (_) => TodoCubit(), child: TodoView());
+    return TodoView();
   }
 }
 

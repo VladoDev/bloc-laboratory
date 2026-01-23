@@ -7,7 +7,7 @@ class ColorPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(create: (_) => ColorCubit(), child: ColorView());
+    return ColorView();
   }
 }
 

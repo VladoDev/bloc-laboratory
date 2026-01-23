@@ -8,7 +8,7 @@ class UserPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(create: (_) => UserCubit(), child: UserView());
+    return UserView();
   }
 }
 
